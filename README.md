@@ -19,6 +19,12 @@ dependencies:
             url: https://github.com/randogoth/map3terms.git
 ```
 
+then run
+
+```
+dart pub update
+```
+
 ## Usage
 
 ```dart
@@ -33,6 +39,10 @@ print(words); // demagogue.shuts.troll
 final coords = wordsToCoord(words);
 print(coords); // [51.5084, -0.1167]
 ```
+
+---
+
+## Original README
 
 Check it out [here](https://pballett.github.io/map3terms/).
 
