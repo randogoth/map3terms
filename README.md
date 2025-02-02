@@ -1,8 +1,12 @@
-# WhatFreeWords
+![bunny](bunny.png)
+
+# Map3Terms
 
 [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png")](http://www.wtfpl.net/)
 
-This is the Dart port of the original [JavaScript implementation](https://github.com/pballett/whatfreewords) that was published as a small test to show how one might reversibly map each ~1m² element of the globe onto a 3-tuple of words.
+This is the Dart port of the original [JavaScript implementation](https://github.com/pballett/map3terms) of a small but ingenious test to show how one might reversibly map roughly each square meter of the globe onto a 3-tuple of words using a simplified symmetric encryption method called [Feistel cipher](https://en.wikipedia.org/wiki/Feistel_cipher).
+
+It seems inspired by the existing proprietary geocoding service [What3Words](https://wiki.openstreetmap.org/wiki/What3words) but uses a completely different method and list of words.
 
 ## Installation
 
@@ -10,15 +14,15 @@ In your Flutter/Dart `pubspec.yaml` file include
 
 ```yaml
 dependencies:
-    whatfreewords:
+    map3terms:
         git:
-            url: https://github.com/randogoth/whatfreewords.git
+            url: https://github.com/randogoth/map3terms.git
 ```
 
 ## Usage
 
 ```dart
-import 'package:whatfreewords/whatfreewords.dart';
+import 'package:map3terms/map3terms.dart';
 
 // coordinate to wfw
 final List<double> coord = [51.50844113, -0.116708278];
@@ -30,7 +34,7 @@ final coords = wordsToCoord(words);
 print(coords); // [51.5084, -0.1167]
 ```
 
-Check it out [here](https://pballett.github.io/whatfreewords/).
+Check it out [here](https://pballett.github.io/map3terms/).
 
 To do this we needed three things:
 1. A function which maps metre-accurate (latitude, longitude) pairs into three 5-digit integers below 40k.

@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'whatfreewords_cipher.dart';
+import 'map3terms_map.dart';
 
 final Map<String, String> ilist = 
     wlist.map((key, value) => MapEntry(value, key));

@@ -1,7 +1,7 @@
-name: whatfreewords
+name: map3terms
 description: A library for converting coordinates to words and back using a Feistel network.
 version: 1.0.0
-homepage: https://github.com/randogoth/whatfreewords
+homepage: https://github.com/randogoth/map3terms
 
 environment:
   sdk: '>=2.17.0 <3.0.0'

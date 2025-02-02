@@ -1,11 +1,11 @@
 import 'package:test/test.dart';
 import 'dart:math';
-import 'package:whatfreewords/whatfreewords.dart';
+import 'package:map3terms/map3terms.dart';
 
 void main() {
   
 
-  group('WhatFreeWords Tests', () {
+  group('map3terms Tests', () {
     test('Coordinate to Words and Back', () async {
       final List<double> coord = [51.50844113, -0.116708278];
       final words = await coordToWords(coord);
