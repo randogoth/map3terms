@@ -4,7 +4,7 @@
 
 [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png")](http://www.wtfpl.net/)
 
-This is the Dart port of the original [JavaScript implementation](https://github.com/pballett/map3terms) of a small but ingenious test to show how one might reversibly map roughly each square meter of the globe onto a 3-tuple of words using a simplified symmetric encryption method called [Feistel cipher](https://en.wikipedia.org/wiki/Feistel_cipher).
+This is the Dart port of the original [JavaScript implementation](https://github.com/pballett/whatfreewords) of a small but ingenious test to show how one might reversibly map roughly each square meter of the globe onto a 3-tuple of words using a simplified symmetric encryption method called [Feistel cipher](https://en.wikipedia.org/wiki/Feistel_cipher).
 
 It seems inspired by the existing proprietary geocoding service [What3Words](https://wiki.openstreetmap.org/wiki/What3words) but uses a completely different method and list of words.
 
