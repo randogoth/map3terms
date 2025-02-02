@@ -44,7 +44,7 @@ print(coords); // [51.5084, -0.1167]
 
 ## Original README
 
-Check it out [here](https://pballett.github.io/map3terms/).
+Check it out [here](https://pballett.github.io/whatfreewords/).
 
 To do this we needed three things:
 1. A function which maps metre-accurate (latitude, longitude) pairs into three 5-digit integers below 40k.
