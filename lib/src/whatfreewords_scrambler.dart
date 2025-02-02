@@ -67,7 +67,7 @@ String unscrambler(String input) {
   return input.substring(6, 12) + input.substring(0, 6);
 }
 
-String coordToWords(List<double> coordinate) {
+Future<String> coordToWords(List<double> coordinate) async {
   if (coordinate.length != 2 ||
       coordinate[0] < -90 || coordinate[0] > 90 ||
       coordinate[1] < -180 || coordinate[1] > 180) {
@@ -102,7 +102,7 @@ String coordToWords(List<double> coordinate) {
   return "${wlist[ind1]}.${wlist[ind2]}.${wlist[ind3]}";
 }
 
-List<double> wordsToCoord(String words) {
+Future<List<double>> wordsToCoord(String words) async {
   List<String> word = words.split(".");
 
   // Ensure exactly 3 words are provided and each exists in the dictionary
@@ -143,11 +143,12 @@ List<double> wordsToCoord(String words) {
 }
 
 
-void main() {
+void main() async {
   List<double> coordinate = [51.50844113, -0.116708278];
-  String words = coordToWords(coordinate);
+  
+  String words = await coordToWords(coordinate);
   print("Words: $words");
   
-  List<double> backToCoord = wordsToCoord(words);
+  List<double> backToCoord = await wordsToCoord(words);
   print("Coordinates: ${backToCoord[0]}, ${backToCoord[1]}");
 }
